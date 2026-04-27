@@ -1,0 +1,27 @@
+# File e directory escluse da sf push/pull/status
+# Ref: https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_exclude_source.htm
+
+package.xml
+
+# LWC configuration files
+**/jsconfig.json
+**/.eslintrc.json
+
+# LWC Jest
+**/__tests__/**
+
+# Dipendenze Node
+node_modules/
+
+# Profili (gestiti manualmente in produzione)
+**/profiles/
+
+# Log Apex
+**/*.log
+
+# File temporanei di sistema
+**/.DS_Store
+
+# Manifests alternativi (evita deploy accidentali)
+manifests/destructiveChanges.xml
+manifests/destructiveChangesPre.xml

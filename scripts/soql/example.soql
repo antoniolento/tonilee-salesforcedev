@@ -1,0 +1,1 @@
+SELECT Id, Name, CreatedDate FROM Account WHERE IsDeleted = false ORDER BY CreatedDate DESC LIMIT 10

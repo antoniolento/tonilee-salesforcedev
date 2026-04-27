@@ -1,0 +1,76 @@
+# SFDX config locale (non condividere credenziali org)
+.sfdx/
+.sf/
+.localdevserver/
+deploy-options.json
+
+# Autenticazione e credenziali
+*.key
+*.pem
+*.crt
+server.key
+authFile.json
+
+# Log e output temporanei
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+logs
+deploy-output.json
+test-results/
+coverage/
+
+# Scratch Org config locale
+config/user-*.json
+
+# Node / NPM
+node_modules/
+.npm/
+
+# LWC
+**/lwc/jsconfig.json
+
+# Cache / linting
+.pmdCache
+.eslintcache
+
+# IDE — VS Code
+.vscode/settings.json
+.vscode/launch.json
+# (mantieni .vscode/extensions.json per le raccomandazioni condivise)
+
+# IDE — IntelliJ / JetBrains
+.idea/
+*.iml
+*.iws
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+# Variabili d'ambiente
+.env
+
+# Python Salesforce Functions
+**/__pycache__/
+**/.venv/
+**/venv/
+
+# Package build artifacts
+*.zip
+*.gz
+*.tar
+
+# Salesforce — file generati automaticamente
+/manifest/package.xml.bak
