@@ -1,0 +1,25 @@
+<aura:component >
+	<!-- COMPONENT ATTRIBUTES -->
+	<aura:attribute name="newItem" type="Camping_Item__c" default="{ 'sobjectType': 'Camping_Item__c',
+                                                                   'Quantity__c': 0,
+                                                                   'Price__c': 0}"/>
+    <aura:registerEvent name="addItem" type="c:addItemEvent"/>
+    <!-- COMPONENT ATTRIBUTES END -->
+    <!-- ITEM FORM -->
+	<lightning:layout>
+    	<lightning:layoutItem>
+            <fieldset class="slds-box slds-theme--default slds-container--small">
+            	<legend class="slds-text-heading--small slds-p-vertical--medium">New Item</legend>
+                	<form class="slds-form--stacked">
+                        <lightning:input aura:id="itemFormElem" type="text" label="Name" value="{!v.newItem.Name}" placeholder="type here..."/>
+                        <lightning:input aura:id="itemFormElem" type="number" label="Quantity" value="{!v.newItem.Quantity__c}" min="1"/>
+                        <lightning:input aura:id="itemFormElem" type="number" formatter="currency" label="Price" value="{!v.newItem.Price__c}"/>
+                        <lightning:input aura:id="itemFormElem" type="checkbox" label="Packed" checked="{!v.newItem.Packed__c}" />
+                        
+                        <lightning:button label="Submit!" onclick="{!c.clickCreateItem}"/>
+            		</form>
+            </fieldset>        
+        </lightning:layoutItem>
+    </lightning:layout>
+    <!-- ITEM FORM END -->
+</aura:component>

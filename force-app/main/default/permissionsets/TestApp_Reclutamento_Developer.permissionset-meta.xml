@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Insieme di autorizzazioni generato per l&apos;accesso all&apos;oggetto personalizzato Posizione per l&apos;applicazione TestApp Reclutamento</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Sviluppatore TestApp Reclutamento</label>
+    <license>Salesforce</license>
+</PermissionSet>
